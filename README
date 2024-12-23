@@ -1,0 +1,59 @@
+1. Briefly summarize your client, Artemis Financial, and its software requirements. Who was the client? What issue did the company want you to address?
+
+Client: Artemis Financial is a global financial company that handles sensitive financial data.
+Issue: They needed better security for their software to protect data, meet regulations like GDPR and PCI DSS, and stay safe from threats like phishing and SQL injection.
+
+2. What did you do well when you found your client’s software security vulnerabilities? Why is it important to code securely? What value does software security add to a company’s overall well-being?
+
+What was done well:
+I was able to find the critical vulnerabilities like SQL injection risks and hardcoded credentials and proposed fixes, including using prepared statements and storing credentials securely.
+Why coding securely matters:
+It prevents breaches, protects customer data, and keeps the company compliant.
+Value of software security:
+It protects the company’s reputation, builds trust with clients, and reduces risks of costly issues.
+
+3. Which part of the vulnerability assessment was challenging or helpful to you?
+
+Challenging parts:
+setting up and using dependency-check-maven
+Testing fixes without breaking anything already existing
+
+Helpful parts:
+Once I figured out how to use it, the automated tools like dependency-check made it easier to identify outdated libraries.
+
+4. How did you increase layers of security? In the future, what would you use to assess vulnerabilities and decide which mitigation techniques to use?
+
+How layers of security were increased:
+Added input validation to block malicious data.
+Used encryption like TLS 1.3 for safe communication.
+Set up multi-factor authentication and role-based access control.
+
+Future tools and techniques:
+Use tools like OWASP Dependency-Check and SonarQube for static analysis.
+Threat modeling to decide which vulnerabilities to fix first.
+
+
+5. How did you make certain the code and software application were functional and secure? After refactoring the code, how did you check to see whether you introduced new vulnerabilities?
+
+Making sure the software worked and was secure:
+Updated code to handle inputs safely and fix vulnerabilities.
+
+Checking for new vulnerabilities:
+Ran static analysis tools to spot new issues.
+
+
+OWASP Dependency-Check for finding vulnerable dependencies.
+Logback and SLF4J for secure error logging.
+
+Coding practices:
+Validating all inputs, encrypting sensitive data, and updating libraries regularly.
+
+
+7. Employers sometimes ask for examples of work that you have successfully completed to show your skills, knowledge, and experience. What might you show future employers from this assignment?
+
+I’d share:
+
+    The vulnerability report, showing the risks I identified.
+    The refactored code, highlighting fixes like secure input handling and logging.
+    Examples of tools and methods I used to improve security.
+
